@@ -21,12 +21,12 @@ public class Tracker {
 		System.out.println("[3] Withdraw");
 		System.out.println("[0] Quit");
 		System.out.println("");
-		System.out.println("");
 		System.out.println("------------------------------");
 
 	}
 
 	public static void acceptInput() {
+		System.out.println("------------------------------");
 		System.out.println("Enter any option");
 		Scanner scan = new Scanner(System.in);
 		int input = scan.nextInt();
@@ -47,7 +47,7 @@ public class Tracker {
 		default:
 			System.out.println("Please choose valid option");
 		}
-
+		display();
 		acceptInput();
 
 	}
@@ -62,7 +62,7 @@ public class Tracker {
 	}
 
 	public static void withdraw() {
-		System.out.println("Enter the amount you want to deposite");
+		System.out.println("Enter the amount you want to withdraw");
 		Scanner scan = new Scanner(System.in);
 		double withdraw_amount = scan.nextDouble();
 
@@ -78,6 +78,10 @@ public class Tracker {
 
 	public static void checkBalance() {
 		System.out.println("Current balance : Rs." + balance);
+	}
+
+	public static void uncalledMethod() {
+
 	}
 
 }
